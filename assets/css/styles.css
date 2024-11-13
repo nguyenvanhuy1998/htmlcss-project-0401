@@ -493,8 +493,8 @@ a {
 
 .tab__list {
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    column-gap: 56px;
 }
 
 .tab__list::after,

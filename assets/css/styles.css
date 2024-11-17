@@ -62,9 +62,9 @@ a {
 }
 
 .btn--primary {
-    color: #fff;
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    color: #fff !important;
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
 }
 
 .btn__icon {
@@ -828,6 +828,10 @@ a {
     background: #FFF6ED;
 }
 
+.pricing__container {
+    width: 994px;
+}
+
 .pricing__top {
     text-align: center;
 }
@@ -886,15 +890,85 @@ a {
 }
 
 .pricing__switch-input:not(:checked)+.pricing__switch-label .pricing__switch-value:nth-of-type(2),
-.pricing__switch-input:checked +.pricing__switch-label .pricing__switch-value:nth-of-type(1) {
+.pricing__switch-input:checked+.pricing__switch-label .pricing__switch-value:nth-of-type(1) {
     color: var(--primary-color);
 }
 
 .pricing__switch-inner {
     position: relative;
 }
+
 .pricing__sale-off {
     position: absolute;
     top: -10px;
     right: -111px;
+}
+
+.pricing__list {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+}
+
+.pricing-item {
+    padding: 30px 28px;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+.pricing-item__type {
+    font-size: 1.2rem;
+    line-height: 1;
+    color: var(--primary-color);
+
+}
+
+.pricing-item__title {
+    margin-top: 8px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #3F4065;
+
+}
+
+.pricing-item__price {
+    margin-top: 24px;
+    font-family: Sora, sans-serif;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000958;
+
+}
+
+.pricing-item__btn {
+    --height: 44px;
+    margin-top: 22px;
+    width: 100%;
+    border: 1px solid #ff5b2e99;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    background: transparent;
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+
+}
+
+.pricing-item__item {
+    display: flex;
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #656689;
+}
+
+.pricing-item__item::before {
+    content: url(../icons/price-check.svg);
+    margin-right: 14px;
+
 }

@@ -1121,3 +1121,33 @@ a {
     width: 24px;
     background-color: var(--primary-color);
 }
+
+/* Blog */
+.blog {
+    padding: 78px 0;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    margin-right: 74px;
+    width: 350px;
+
+}
+
+.blog__desc {
+    margin-top: 0;
+}
+
+.blog__cta {
+    margin-top: 24px;
+    min-width: 182px;
+    border: 1px solid #ff5b2e99;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
